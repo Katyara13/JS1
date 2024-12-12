@@ -4,7 +4,7 @@ let c=prompt("Введите число:");
 let d=prompt("Введите число:");
 if (isNaN(a) || isNaN(b) || isNaN(c) || isNaN(d))
 {
-    document.querySelector(".msg").innerHTML="Вы ввели не число, обновиет страницу и попробуйте еще раз!!"
+    document.querySelector(".msg").innerHTML="Вы ввели не число, обновиет страницу и попробуйте еще раз!"
 }
 else {
     let select=prompt("Каким способом решать? 1 или 2?");
@@ -23,7 +23,7 @@ else {
             break;
         case "2":
             max=Math.max(c+d,a+c,b+c,a+d,b+d);
-            document.querySelector(".msg").innerHTML=`Саксимальная сумма ${max}!`;
+            document.querySelector(".msg").innerHTML=`Максимальная сумма ${max}!`;
             break;
         default:
             max="Неверный выбор!";
